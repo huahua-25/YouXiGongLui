@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏攻略世界</title>
+    <link rel="stylesheet" href="./css/合.css">
+</head>
+<body>
+<!-- *******导航栏******* -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="" class="nav-logo">游戏攻略世界</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#popular" class="nav-link">热门攻略</a></li>
+                <li><a href="#popular" class="nav-link">最新攻略</a></li>
+                <li><a href="./分页/攻略.html" class="nav-link">Boss攻略</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">玩家社区</a>
+                    <div class="dropdown-content">
+                        <a href="./分页/讨论论坛.html" class="dropdown-item">讨论论坛</a>
+                        <a href="./分页/玩家攻略.html" class="dropdown-item">玩家攻略</a>
+                        <a href="./分页/视频分享.html" class="dropdown-item">视频分享</a>
+                        <a href="./分页/活动中心.html" class="dropdown-item">活动中心</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- *******轮播******* -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/梅琳娜.jpg" alt="艾尔登法环攻略">
+                <div class="carousel-content">
+                    <h2>艾尔登法环全面攻略</h2>
+                    <p>从新手到大师，全面的艾尔登法环游戏攻略</p>
+                    <a href="#" class="btn">查看攻略</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/塞尔达1.jpg" alt="塞尔达传说攻略">
+                <div class="carousel-content">
+                    <h2>塞尔达传说：王国之泪攻略</h2>
+                    <p>探索海拉鲁的每一个角落，解锁所有秘密</p>
+                    <a href="#" class="btn">开始冒险</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/只狼1.jpg" alt="只狼攻略">
+                <div class="carousel-content">
+                    <h2>只狼：影逝二度终极攻略</h2>
+                    <p>成为忍者大师，征服每一个Boss</p>
+                    <a href="#" class="btn">学习技巧</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <span class="carousel-dot active" data-slide="0"></span>
+            <span class="carousel-dot" data-slide="1"></span>
+            <span class="carousel-dot" data-slide="2"></span>
+        </div>
+        <div class="carousel-arrow carousel-prev">❮</div>
+        <div class="carousel-arrow carousel-next">❯</div>
+    </div>
+<!-- *******热门攻略******* -->
+    <div class="section" id="popular">
+        <h2 class="section-title">热门攻略</h2>
+        <div class="guides-grid">
+            <div class="guide-card">
+                <img src="./images/艾尔登法环2.webp" alt="艾尔登法环">
+                <div class="guide-content">
+                    <h3 class="guide-title">艾尔登法环</h3>
+                    <div class="guide-info">
+                        <div class="guide-stat">
+                            <strong>难度：</strong>
+                            <span>高</span>
+                        </div>
+                        <div class="guide-stat">
+                            <strong>更新日期：</strong>
+                            <span>2023.06.22</span>
+                        </div>
+                    </div>
+                    <p>从新手到大师的全面指南，包括Boss战、地图探索和装备选择。</p>
+                    <a href="#detail" class="btn">查看详情</a>
+                </div>
+            </div>
+            <div class="guide-card">
+                <img src="./images/塞尔达2.webp" alt="塞尔达传说">
+                <div class="guide-content">
+                    <h3 class="guide-title">塞尔达传说：王国之泪</h3>
+                    <div class="guide-info">
+                        <div class="guide-stat">
+                            <strong>难度：</strong>
+                            <span>中等</span>
+                        </div>
+                        <div class="guide-stat">
+                            <strong>更新日期：</strong>
+                            <span>2023.09.06</span>
+                        </div>
+                    </div>
+                    <p>官方推出的《荒野之息》地图指南或许能为你探索海拉鲁大陆提供帮助。</p>
+                    <a href="#detail" class="btn">查看详情</a>
+                </div>
+            </div>
+            <!-- 热门攻略卡片 -->
+            <div class="guide-card">
+                <img src="./images/只狼2.jpg" alt="只狼">
+                <div class="guide-content">
+                    <h3 class="guide-title">只狼：影逝二度</h3>
+                    <div class="guide-info">
+                        <div class="guide-stat">
+                            <strong>难度：</strong>
+                            <span>极高</span>
+                        </div>
+                        <div class="guide-stat">
+                            <strong>更新日期：</strong>
+                            <span>2023.10.20</span>
+                        </div>
+                    </div>
+                    <p>详细的Boss战策略和忍术使用技巧，助你成为真正的忍者大师。</p>
+                    <a href="#detail" class="btn">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- *******精品攻略******* -->
+    <div class="section" id="popular">
+        <h2 class="section-title">精品攻略</h2>
+        <div class="guides-grid">
+            <div class="guide-card" style="background-image: url('./images/艾尔登法环3.webp'); background-size: cover; background-position: center; width: 80vh;height: 50vh;">
+                <div class="guide-content">
+                    <h3 class="guide-title">艾尔登法环</h3>
+                    <div class="guide-info">
+                        <div class="guide-stat">
+                            <strong>难度：</strong>
+                            <span>高</span>
+                        </div>
+                        <div class="guide-stat">
+                            <strong>更新日期：</strong>
+                            <span>2023.06.22</span>
+                        </div>
+                    </div>
+                    <p>从新手到大师的全面指南，包括Boss战、地图探索和装备选择。</p>
+                    <a href="#detail" class="btn">查看详情</a>
+                </div>
+            </div>
+            <div class="guide-card" style="background-image: url('./images/塞尔达3.jpeg'); background-size: cover; background-position: center; width: 80vh;height: 50vh;">
+                <div class="guide-content">
+                    <h3 class="guide-title">塞尔达传说：王国之泪</h3>
+                    <div class="guide-info">
+                        <div class="guide-stat">
+                            <strong>难度：</strong>
+                            <span>中等</span>
+                        </div>
+                        <div class="guide-stat">
+                            <strong>更新日期：</strong>
+                            <span>2023.09.06</span>
+                        </div>
+                    </div>
+                    <p>位于海拉鲁东北边的海布拉地区是一个内行人才知道的观光景点。在这里能够体验积雪山区特有的壮丽景观与休闲活动。</p>
+                    <a href="#detail" class="btn">查看详情</a>
+                </div>
+            </div>
+            <!-- 其他热门攻略卡片 -->
+        </div>
+    </div>
+<!-- *******每周挑战******* -->
+    <div class="section" id="weekly-challenge" style="padding: 2rem 0;">
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">每周挑战</h2>
+        <div class="challenge-container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; padding: 0 2rem; max-width: 1200px; margin: 0 auto;">
+            <!-- 挑战卡片 1 -->
+            <div class="challenge-card"
+                style="background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 20, 0.95)); padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                <img src="./images/只狼1.jpg" alt="无伤挑战"style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+                <div style="padding: 1rem 0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="color: #ffd700; margin: 0;">极限无伤挑战</h3>
+                        <span
+                            style="background: #ff4444; padding: 4px 8px; border-radius: 12px; font-size: 0.8em; color: white;">困难</span>
+                    </div>
+                    <p style="color: #e0e0e0; margin: 0.8rem 0;">挑战只狼苇名一心无伤通关，获得限定称号</p>
+                    <div style="display: flex; justify-content: space-between; margin: 1rem 0; color: #bbb;">
+                        <span>🏆 奖励: 500积分</span>
+                        <span>👥 1,234人参与</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); height: 6px; border-radius: 3px; margin: 0.8rem 0;">
+                        <div
+                            style="background: linear-gradient(90deg, #ffd700, #ff9500); height: 100%; width: 75%; border-radius: 3px;">
+                        </div>
+                    </div>
+                    <p style="text-align: right; color: #ffd700; font-size: 0.9em; margin: 0.5rem 0 0;">剩余时间: 3天</p>
+                </div>
+            </div>
+            <!-- 挑战卡片 2 -->
+            <div class="challenge-card"
+                style="background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 20, 0.95)); padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                <img src="./images/艾尔登法环4.jpg" alt="速通挑战"
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+                <div style="padding: 1rem 0;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="color: #ffd700; margin: 0;">首领速通挑战</h3>
+                        <span
+                            style="background: #4CAF50; padding: 4px 8px; border-radius: 12px; font-size: 0.8em; color: white;">中等</span>
+                    </div>
+                    <p style="color: #e0e0e0; margin: 0.8rem 0;">3分钟内击败-约定之王拉塔恩-获得特殊奖励</p>
+                    <div style="display: flex; justify-content: space-between; margin: 1rem 0; color: #bbb;">
+                        <span>🏆 奖励: 300积分</span>
+                        <span>👥 2,156人参与</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); height: 6px; border-radius: 3px; margin: 0.8rem 0;">
+                        <div
+                            style="background: linear-gradient(90deg, #4CAF50, #8BC34A); height: 100%; width: 45%; border-radius: 3px;">
+                        </div>
+                    </div>
+                    <p style="text-align: right; color: #4CAF50; font-size: 0.9em; margin: 0.5rem 0 0;">剩余时间: 5天</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- *******技能教学******* -->
+    <div class="section" id="skill-tutorials"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95)); padding: 2rem 0;">
+        <h2 class="section-title" style="color: white; margin-bottom: 1.5rem;">技能教学</h2>
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; padding: 0 2rem; max-width: 1200px; margin: 0 auto;">
+            <!-- 技能卡片 1 -->
+            <div class="skill-card"
+                style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/艾尔登法环1.webp'); background-size: cover; background-position: center; padding: 1.5rem; border-radius: 15px; color: white; position: relative; overflow: hidden;">
+                <div
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)); padding: 1rem; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="margin: 0; color: #ffd700;">完美弹反技巧</h3>
+                        <span
+                            style="background: #ff4444; padding: 4px 8px; border-radius: 12px; font-size: 0.8em;">高级技巧</span>
+                    </div>
+                    <div style="margin: 1rem 0;">
+                        <p style="margin: 0.5rem 0;">掌握艾尔登法环中的完美弹反时机</p>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.8rem;">
+                            <span>👁️ 12,435次观看</span>
+                            <span>⭐ 4.8分</span>
+                        </div>
+                    </div>
+                    <button
+                        style="background: #ffd700; color: black; border: none; padding: 0.5rem 1rem; border-radius: 8px; width: 100%; margin-top: 0.5rem;">观看教学</button>
+                </div>
+            </div>
+            <!-- 技能卡片 2 -->
+            <div class="skill-card"
+                style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/只狼1.jpg'); background-size: cover; background-position: center; padding: 1.5rem; border-radius: 15px; color: white; position: relative; overflow: hidden;">
+                <div
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)); padding: 1rem; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="margin: 0; color: #ffd700;">连招技巧精通</h3>
+                        <span
+                            style="background: #4CAF50; padding: 4px 8px; border-radius: 12px; font-size: 0.8em;">中级技巧</span>
+                    </div>
+                    <div style="margin: 1rem 0;">
+                        <p style="margin: 0.5rem 0;">学习只狼中的高效连招技巧</p>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.8rem;">
+                            <span>👁️ 8,921次观看</span>
+                            <span>⭐ 4.6分</span>
+                        </div>
+                    </div>
+                    <button
+                        style="background: #ffd700; color: black; border: none; padding: 0.5rem 1rem; border-radius: 8px; width: 100%; margin-top: 0.5rem;">观看教学</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- *******速通英雄榜******* -->
+    <div class="section" id="speedrun"
+    style="padding: 2rem 0; background: linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.8));">
+    <h2 class="section-title" style="color: white; margin-bottom: 1.5rem;">速通英雄榜</h2>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <!-- 速通记录项 1 -->
+        <div class="speedrun-entry"
+            style="background: rgba(255,255,255,0.05); margin-bottom: 1rem; border-radius: 15px; overflow: hidden;">
+            <div style="display: flex; align-items: center; padding: 1rem; gap: 1.5rem;">
+                <div style="position: relative;">
+                    <img src="./images/梅琳娜.jpg" alt="速通记录"
+                        style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; border: 3px solid #ffd700;">
+                    <span
+                        style="position: absolute; top: -10px; right: -10px; background: #ffd700; color: black; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</span>
+                </div>
+                <div style="flex-grow: 1; color: white;">
+                    <h3 style="margin: 0; color: #ffd700;">艾尔登法环 全Boss速通</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; margin-top: 0.5rem;">
+                        <span>🎮 记录保持者：XiaoBai</span>
+                        <span>⏱️ 用时：2小时31分钟</span>
+                        <span>📅 记录日期：2023.11.20</span>
+                        <span>👁️ 观看次数：45,678</span>
+                    </div>
+                </div>
+                <button
+                    style="background: #ffd700; color: black; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: bold;">观看回放</button>
+            </div>
+        </div>
+
+        <!-- 速通记录项 2 -->
+        <div class="speedrun-entry"
+            style="background: rgba(255,255,255,0.05); margin-bottom: 1rem; border-radius: 15px; overflow: hidden;">
+            <div style="display: flex; align-items: center; padding: 1rem; gap: 1.5rem;">
+                <div style="position: relative;">
+                    <img src="./images/只狼2.jpg" alt="速通记录"
+                        style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; border: 3px solid #c0c0c0;">
+                    <span
+                        style="position: absolute; top: -10px; right: -10px; background: #c0c0c0; color: black; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</span>
+                </div>
+                <div style="flex-grow: 1; color: white;">
+                    <h3 style="margin: 0; color: #c0c0c0;">只狼 无伤速通</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; margin-top: 0.5rem;">
+                        <span>🎮 记录保持者：Pro_Gamer</span>
+                        <span>⏱️ 用时：1小时45分钟</span>
+                        <span>📅 记录日期：2023.11.18</span>
+                        <span>👁️ 观看次数：32,156</span>
+                    </div>
+                </div>
+                <button
+                    style="background: #c0c0c0; color: black; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: bold;">观看回放</button>
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- *******配装推荐******* -->
+    <div class="section" id="builds"
+    style="padding: 2rem 0; background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.95));">
+    <h2 class="section-title" style="color: white; margin-bottom: 1.5rem;">玩家配装推荐</h2>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;"><div class="build-card"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/艾尔登法环2.webp'); background-size: cover; background-position: center; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+                <h3 style="color: #ffd700; margin: 0;">究极输出配装</h3>
+                <span
+                    style="background: #ff4444; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8em;">热门</span>
+            </div>
+            <div style="margin: 1rem 0; color: #e0e0e0;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <img src="./images/永真.jpg" alt="作者头像" style="width: 24px; height: 24px; border-radius: 50%;">
+                    <span>作者：GameMaster</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span>📅 2023.11.20</span>
+                    <span>👍 2,345</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin: 1rem 0;">
+                <span style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 15px; color: #fff;">PVE</span>
+                <span style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 15px; color: #fff;">近战</span>
+                <span style="background: #ffd700; padding: 4px 12px; border-radius: 15px; color: black;">S级配装</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <button
+                    style="width: 100%; background: linear-gradient(90deg, #ffd700, #ff9500); border: none; padding: 0.8rem; border-radius: 8px; color: black; font-weight: bold;">查看详情</button>
+            </div>
+        </div>
+        
+        <!-- 配装卡片 2 -->
+        <div class="build-card"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/只狼1.jpg'); background-size: cover; background-position: center; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+                <h3 style="color: #4CAF50; margin: 0;">忍者刺客配装</h3>
+                <span
+                    style="background: #4CAF50; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8em;">新品</span>
+            </div>
+            <div style="margin: 1rem 0; color: #e0e0e0;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <img src="./images/梅琳娜.jpg" alt="作者头像" style="width: 24px; height: 24px; border-radius: 50%;">
+                    <span>作者:NinjaMaster</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span>📅 2023.11.19</span>
+                    <span>👍 1,876</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin: 1rem 0;">
+                <span style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 15px; color: #fff;">PVP</span>
+                <span style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 15px; color: #fff;">敏捷</span>
+                <span style="background: #4CAF50; padding: 4px 12px; border-radius: 15px; color: white;">A级配装</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <button
+                    style="width: 100%; background: linear-gradient(90deg, #4CAF50, #8BC34A); border: none; padding: 0.8rem; border-radius: 8px; color: white; font-weight: bold;">查看详情</button>
+            </div>
+        </div>
+        
+        <!-- 配装卡片 3 -->
+        <div class="build-card"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/塞尔达4.jpg'); background-size: cover; background-position: center; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <div style="display: flex; justify-content: space-between; align-items: start;">
+                <h3 style="color: #2196F3; margin: 0;">全能法师配装</h3>
+                <span
+                    style="background: #2196F3; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8em;">推荐</span>
+            </div>
+            <div style="margin: 1rem 0; color: #e0e0e0;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <img src="./images/艾尔登法环2.webp" alt="作者头像" style="width: 24px; height: 24px; border-radius: 50%;">
+                    <span>作者：MagicPro</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span>📅 2023.11.18</span>
+                    <span>👍 1,543</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin: 1rem 0;">
+                <span style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 15px; color: #fff;">PVE</span>
+                <span style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 15px; color: #fff;">法系</span>
+                <span style="background: #2196F3; padding: 4px 12px; border-radius: 15px; color: white;">B级配装</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <button
+                    style="width: 100%; background: linear-gradient(90deg, #2196F3, #03A9F4); border: none; padding: 0.8rem; border-radius: 8px; color: white; font-weight: bold;">查看详情</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+<!-- *******底层******* -->
+    <div class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>致力于为玩家提供最全面、最详细的游戏攻略</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#popular" class="nav-link">热门攻略</a></li>
+                    <li><a href="#latest" class="nav-link">最新攻略</a></li>
+                    <li><a href="#bosses" class="nav-link">Boss攻略</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>邮箱: 8008208820@THC.com</p>
+                <div class="social-links">
+                    <a href="#weixin" class="nav-link">微信</a>
+                    <a href="#weibo" class="nav-link">微博</a>
+                    <a href="#bilibili" class="nav-link">哔哩哔哩</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- *******js******* -->
+<script src="js/轮播.js"></script>
+</body>
+
+</html>
