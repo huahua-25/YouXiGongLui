@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频分享 - 游戏攻略世界</title>
+    <style>
+        /* 基础样式与其他页面相同 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .back-to-home {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #6d28d9;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            background: #4c1d95;
+        }
+
+        .videos-container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .videos-header {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: #1e293b;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-thumbnail {
+            position: relative;
+            padding-top: 56.25%;
+            /* 16:9 比例 */
+            background: #2d3748;
+        }
+
+        .video-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: rgba(109, 40, 217, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .video-content {
+            padding: 1.5rem;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: 1rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        .video-play video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /*保持视频比例，按照设置的宽和高显示*/
+            background-image: url(../images/育碧.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="back-to-home">🏠</a>
+    <div class="videos-container">
+        <div class="videos-header">
+            <h1>视频分享</h1>
+            <p>分享你的精彩游戏时刻</p>
+        </div>
+        <!-- 卡片3  怪物猎人世界  -->
+        <div class="video-card">
+            <div class="video-thumbnail"
+                style="background-image: url(https://i0.hdslb.com/bfs/archive/f4f081d5624e2da81f35d1d5d07307d159852334.jpg);">
+                <div class="video-play">
+                    <video
+                        src="https://upos-sz-mirror08c.bilivideo.com/upgcxcode/47/42/1127694247/1127694247-1-208.mp4?e=ig8euxZM2rNcNbhMhzdVhwdlhzKzhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1735476846&gen=playurlv2&os=08cbv&oi=2018263300&trid=4edd7e912dc5479a81bb6c344c33d24eT&mid=3546773918320941&platform=html5&og=hw&upsig=ab7620838485e5fc905ec20c2effdbbb&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=343208&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000"
+                        poster="" id="myVideo"></video>
+                </div>
+            </div>
+            <div class="video-content">
+                <h3>【怪物猎人世界】高燃混剪！感受来自龙种怪物们的极致威压</h3>
+                <div class="video-stats">
+                    <span>👁 1.2万次观看</span>
+                    <span>👍 2.3k</span>
+                    <span>💬 156条评论</span>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片4  塞尔达-->
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <div class="video-play">
+                    <video
+                        src="https://upos-sz-mirrorali.bilivideo.com/upgcxcode/89/57/1192275789/1192275789-1-192.mp4?e=ig8euxZM2rNcNbN17zdVhwdlhbRahwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1735479032&gen=playurlv2&os=alibv&oi=2018263300&trid=ce8a4fd5ed9148acae9cfefa46077b8eT&mid=3546700710938778&platform=html5&og=cos&upsig=b665e7276c5b6024e01db8fc16cefa24&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=217898&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000"
+                        poster="../images/塞尔达4.jpg" id="myVideo"></video>
+                </div>
+            </div>
+            <div class="video-content">
+                <h3>“可惜你不玩塞尔达，不明白这个视频的分量”</h3>
+                <div class="video-stats">
+                    <span>👁 1.2万次观看</span>
+                    <span>👍 2.3k</span>
+                    <span>💬 156条评论</span>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片5  开 眠 糕 手-->
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <div class="video-play">
+                    <video src="https://upos-sz-mirrorali.bilivideo.com/upgcxcode/82/60/1544986082/1544986082-1-192.mp4?e=ig8euxZM2rNcNbNBhbdVhwdlhbUghwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1735495305&gen=playurlv2&os=alibv&oi=2018263300&trid=197b067c9dad4e0086f724d92fc95396T&mid=3546773918320685&platform=html5&og=cos&upsig=1529c273a02c5dba17fbe54e869d947a&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=252334&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000" poster="../images/彬彬子.jpg"
+                    id="myVideo">
+                </video>
+                </div>
+            </div>
+            <div class="video-content">
+                <h3>💤 《 开 眠 糕 手 》 💤 1.0</h3>
+                <div class="video-stats">
+                    <span>👁 1.2万次观看</span>
+                    <span>👍 2.3k</span>
+                    <span>💬 156条评论</span>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片1  只狼-->
+        <div class="video-card">
+            <div class="video-thumbnail">
+                    <div class="video-play">
+                        <video src="https://upos-sz-mirrorbd.bilivideo.com/upgcxcode/23/63/26155746323/26155746323-1-192.mp4?e=ig8euxZM2rNcNbNM7zdVhwdlhbKahwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1735490942&gen=playurlv2&os=bdbv&oi=2018263300&trid=4971201de4b9489da713292bda35fb72T&mid=3546773274495742&platform=html5&og=hw&upsig=23d6d3ba71b4343cd7c3e635618a30c8&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=247659&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000"poster="../images/只狼1.jpg" id="myVideo"></video>
+                    </div>
+            </div>
+            <div class="video-content">
+                <h3>当肉体濒临极限的时候 意志会带你杀出重围</h3>
+                <div class="video-stats">
+                    <span>👁 1.2万次观看</span>
+                    <span>👍 2.3k</span>
+                    <span>💬 156条评论</span>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片2  魂圈拜年纪-->
+        <div class="video-card">
+            <div class="video-thumbnail" style="background-image: url(https://i0.hdslb.com/bfs/archive/f4f081d5624e2da81f35d1d5d07307d159852334.jpg);">
+                <div class="video-play" >
+                    <video src="https://upos-sz-mirrorali.bilivideo.com/upgcxcode/38/65/296316538/296316538-1-208.mp4?e=ig8euxZM2rNcNbhB7wdVhwdlhzUMhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1735476141&gen=playurlv2&os=alibv&oi=2018263300&trid=87b230e0ff014524896b7a149dfe3911T&mid=3546700710938778&platform=html5&og=cos&upsig=606a71029ee69fa550e143b27cd8b771&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=354926&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000" poster="../images/只狼2.jpg"id="myVideo"></video>
+                </div>
+            </div>
+            <div class="video-content">
+                <h3>【2021魂圈拜年纪单品/魂者剑心/超燃】凡人之躯，竟锤炼如斯！</h3>
+                <div class="video-stats">
+                    <span>👁 1.2万次观看</span>
+                    <span>👍 2.3k</span>
+                    <span>💬 156条评论</span>
+                </div>
+            </div>
+        </div>
+        <!-- 卡片6  育碧-->
+        <div class="video-card">
+            <div class="video-thumbnail">
+                <div class="video-play">
+                    <video src="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/11/70/56847011/56847011-1-208.mp4?e=ig8euxZM2rNcNbKghzdVhwdl7wNzhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1735480641&gen=playurlv2&os=cosbv&oi=2018263300&trid=46c6480f45654e6982f72cbfb2d555b0T&mid=3546773918320834&platform=html5&og=cos&upsig=579d3ddadfffd930d60038a2db2aae8b&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=424520&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000"
+                        poster="../images/育碧.jpg" id="myVideo"></video>
+                </div>
+            </div>
+            <div class="video-content">
+                <h3>【极致画质/疯狂踩点/高燃】一个可能让你对育碧路转粉的视频</h3>
+                <div class="video-stats">
+                    <span>👁 1.2万次观看</span>
+                    <span>👍 2.3k</span>
+                    <span>💬 156条评论</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 获取所有视频播放容器
+        var videoPlays = document.querySelectorAll('.video-play');
+        videoPlays.forEach(function(videoPlay) {
+            // 获取当前容器中的视频元素
+            var myVideo = videoPlay.querySelector('video');
+            // 为每个视频播放容器添加点击事件监听器
+            videoPlay.addEventListener('click', function() {
+            // 遍历所有视频播放容器
+            videoPlays.forEach(function(otherVideoPlay) {
+                var otherVideo = otherVideoPlay.querySelector('video');
+                // 如果不是当前点击的视频，则暂停并重置其他视频
+                if (otherVideo !== myVideo) {
+                otherVideo.pause();
+                otherVideo.load(); 
+                }
+            });
+            // 切换当前视频的播放状态
+            if (myVideo.paused) {
+                myVideo.play();  // 播放视频
+            } else {
+                myVideo.pause(); // 暂停视频
+            }
+            });
+        });
+    </script>
+</body>
+</html>
