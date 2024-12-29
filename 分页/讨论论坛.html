@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讨论论坛 - 游戏攻略世界</title>
+    <style>
+        /* 引入基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式（与主页相同） */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            padding: 1rem;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        /* 论坛特定样式 */
+        .forum-container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .forum-header {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .forum-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #e2e8f0;
+        }
+
+        .forum-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-card {
+            background: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+
+        .topic-list {
+            background: #1e293b;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+        .topic-item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-bottom: 1px solid #2d3748;
+            transition: background-color 0.3s ease;
+        }
+
+        .topic-item:hover {
+            background-color: #2d3748;
+        }
+
+        .topic-icon {
+            width: 40px;
+            height: 40px;
+            background: #6d28d9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .topic-content {
+            overflow: hidden;
+        }
+
+        .topic-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #e2e8f0;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .topic-stats {
+            text-align: right;
+            color: #94a3b8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #6d28d9;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #4c1d95;
+        }
+        .back-to-home {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #6d28d9;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            background: #4c1d95;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <a href="../index.html" class="back-to-home">🏠</a>
+    
+
+    <div class="forum-container">
+        <div class="forum-header">
+            <h1 class="forum-title">讨论论坛</h1>
+            <p>加入我们的社区，分享你的游戏经验和心得</p>
+            <div class="forum-stats">
+                <div class="stat-card">
+                    <h3>活跃用户</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="stat-card">
+                    <h3>今日帖子</h3>
+                    <p>567</p>
+                </div>
+                <div class="stat-card">
+                    <h3>总话题数</h3>
+                    <p>89,012</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-list">
+            <div class="topic-item">
+                <div class="topic-icon">📌</div>
+                <div class="topic-content">
+                    <h3 class="topic-title">【置顶】社区规则与公告</h3>
+                    <div class="topic-meta">
+                        <span>管理员</span> • <span>2024-12-28</span>
+                    </div>
+                </div>
+                <div class="topic-stats">
+                    <div>浏览: 12,345</div>
+                    <div>回复: 789</div>
+                </div>
+            </div>
+
+            <div class="topic-item">
+                <div class="topic-icon">💬</div>
+                <div class="topic-content">
+                    <h3 class="topic-title">新手求助：如何开始第一个任务？</h3>
+                    <div class="topic-meta">
+                        <span>新手玩家</span> • <span>2024-12-28</span>
+                    </div>
+                </div>
+                <div class="topic-stats">
+                    <div>浏览: 456</div>
+                    <div>回复: 23</div>
+                </div>
+            </div>
+
+            <!-- 更多话题项目 -->
+        </div>
+    </div>
+</body>
+
+</html>
